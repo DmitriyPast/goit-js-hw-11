@@ -35,7 +35,6 @@ export function createGallery(images) {
         data-source="${original}"
         alt="${description}"
       />
-      fuck
     </a>
       <div style="display:flex; background: white; position:relative;">
       <span style="z-index: 10;">1$likes: ${likes}</span>
