@@ -5,6 +5,7 @@ import SimpleLightbox from 'simplelightbox';
 // import 'simplelightbox/dist/simple-lightbox.min.css'; <-- I HATE this
 
 const gallery = document.querySelector('ul.gallery');
+const loader = document.querySelector('span.loader');
 // createGallery(images). Ця функція повинна приймати масив images, створювати HTML-розмітку для галереї, додавати її в контейнер галереї та викликати метод екземпляра SimpleLightbox refresh(). Нічого не повертає.
 export function createGallery(images) {
   clearGallery();
@@ -78,8 +79,10 @@ export function clearGallery() {
 // showLoader(). Ця функція нічого не приймає, повинна додавати клас для відображення лоадера. Нічого не повертає.
 export function showLoader() {
   gallery.classList.add('.loading');
+  loader.classList.add('.loader-show');
 }
 // hideLoader(). Ця функція нічого не приймає, повинна прибирати клас для відображення лоадера. Нічого не повертає.
 export function hideLoader() {
   gallery.classList.remove('.loading');
+  loader.classList.remove('.loader-show');
 }
