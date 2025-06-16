@@ -21,9 +21,6 @@ export function createGallery(images) {
         preview = webformatURL,
         original = largeImageURL,
         description = tags,
-        // webformatURL,
-        // largeImageURL,
-        // tags,
         likes,
         views,
         comments,
@@ -37,12 +34,18 @@ export function createGallery(images) {
         alt="${description}"
       />
     </a>
-      <div style="display:flex; background: white; position:relative;">
-      <span style="z-index: 10;">1$likes: ${likes}</span>
-      <span style="z-index: 10;">2vievs: ${views}</span>
-      <span style="z-index: 10;">3comments: ${comments}</span>
-      <span style="z-index: 10;">4downloads: ${downloads}</span>
-      </div>
+      <!--<div class="image-info">
+      <span>likes: ${likes}</span>
+      <span>vievs: ${views}</span>
+      <span>comments: ${comments}</span>
+      <span">downloads: ${downloads}</span>
+      </div>-->
+      <ul class="image-info">
+        <li><h4>Likes</h4><p>${likes}</p></li>
+        <li><h4>Views</h4><p>${views}</p></li>
+        <li><h4>Comments</h4><p>${comments}</p></li>
+        <li><h4>Downloads</h4><p>${downloads}</p></li>
+      </ul>
   </li>`
     )
     .join('');
