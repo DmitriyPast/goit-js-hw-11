@@ -206,16 +206,16 @@ body {
 }
 
 .gallery-item {
-  position: relative;
+  /* position: relative; */
   width: 360px;
-  height: 200px;
+  /* height: 200px; */
   /* margin: auto; */
-  border: solid 10px black;
 }
 
-.gallery-link,
+/* .gallery-link, */
 .gallery-image {
-  position: absolute;
+  border: solid 10px black;
+  /* position: absolute; */
   width: 360px;
   height: 200px;
   max-width: none;
@@ -225,7 +225,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   /* width: 40%; */
-  transform: translate(-50%, -50%);
+  /* transform: translate(-50%, -50%); */
 }
 
 .gallery-image:hover {

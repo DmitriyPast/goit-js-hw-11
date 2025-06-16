@@ -21,9 +21,9 @@ export function createGallery(images) {
         preview = webformatURL,
         original = largeImageURL,
         description = tags,
-        // : preview,
-        // : original,
-        // : description,
+        // webformatURL,
+        // largeImageURL,
+        // tags,
         likes,
         views,
         comments,
@@ -68,21 +68,22 @@ export function createGallery(images) {
   //     )
   //     .join('')
   // );
-  const dick = new SimpleLightbox('.gallery a', {});
-  dick.refresh();
+  const slb = new SimpleLightbox('.gallery a', {});
+  slb.refresh();
 }
 // clearGallery(). Ця функція нічого не приймає та повинна очищати вміст контейнера галереї. Нічого не повертає.
 export function clearGallery() {
   gallery.innerHTML = '';
   //
 }
+
 // showLoader(). Ця функція нічого не приймає, повинна додавати клас для відображення лоадера. Нічого не повертає.
 export function showLoader() {
-  gallery.classList.add('.loading');
+  // gallery.classList.add('.loading');
   loader.classList.add('.loader-show');
 }
 // hideLoader(). Ця функція нічого не приймає, повинна прибирати клас для відображення лоадера. Нічого не повертає.
 export function hideLoader() {
-  gallery.classList.remove('.loading');
+  // gallery.classList.remove('.loading');
   loader.classList.remove('.loader-show');
 }
