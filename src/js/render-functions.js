@@ -83,10 +83,12 @@ export function clearGallery() {
 // showLoader(). Ця функція нічого не приймає, повинна додавати клас для відображення лоадера. Нічого не повертає.
 export function showLoader() {
   // gallery.classList.add('.loading');
-  loader.classList.add('.loader-show');
+  // loader.classList.add('.loader-show');
+  loader.classList.remove('hidden');
 }
 // hideLoader(). Ця функція нічого не приймає, повинна прибирати клас для відображення лоадера. Нічого не повертає.
 export function hideLoader() {
   // gallery.classList.remove('.loading');
-  loader.classList.remove('.loader-show');
+  // loader.classList.remove('.loader-show');
+  loader.classList.add('hidden');
 }
