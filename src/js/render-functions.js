@@ -10,7 +10,7 @@ const loader = document.querySelector('span.loader');
 export function createGallery(images) {
   clearGallery();
   //
-  console.log(gallery);
+  // console.log(gallery);
 
   gallery.innerHTML = images
     .map(
